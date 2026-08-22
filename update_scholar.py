@@ -1,10 +1,43 @@
 import json
+import html
 from datetime import datetime, timezone
 
 from scholarly import scholarly
 
 
 SCHOLAR_ID = "YXmK2hcAAAAJ"
+
+
+def create_svg(citations, hindex, i10index):
+    text = (
+        f"{citations:,} citations"
+        f"  ·  h-index {hindex}"
+        f"  ·  i10-index {i10index}"
+    )
+
+    text = html.escape(text)
+
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg"
+     width="300"
+     height="28"
+     viewBox="0 0 300 28">
+
+  <rect width="100%" height="100%" fill="none"/>
+
+  <text
+    x="0"
+    y="18"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+    fill="#444444">
+    {text}
+  </text>
+
+</svg>
+"""
+
+    with open("scholar-metrics.svg", "w", encoding="utf-8") as f:
+        f.write(svg)
 
 
 def main():
@@ -29,10 +62,14 @@ def main():
 
     print(metrics)
 
+    # JSON for GitHub Pages
     with open("metrics.json", "w", encoding="utf-8") as f:
         json.dump(metrics, f, indent=2)
 
-    print("metrics.json updated successfully.")
+    # SVG for embedding on external websites
+    create_svg(citations, hindex, i10index)
+
+    print("metrics.json and scholar-metrics.svg updated successfully.")
 
 
 if __name__ == "__main__":
