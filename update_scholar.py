@@ -18,17 +18,15 @@ def create_svg(citations, hindex, i10index):
     text = html.escape(text)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg"
-     width="300"
-     height="28"
-     viewBox="0 0 300 28">
-
-  <rect width="100%" height="100%" fill="none"/>
+     width="280"
+     height="22"
+     viewBox="0 0 280 22">
 
   <text
     x="0"
-    y="18"
+    y="15"
     font-family="Arial, Helvetica, sans-serif"
-    font-size="14"
+    font-size="13"
     fill="#444444">
     {text}
   </text>
