@@ -1,71 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-  <style>
-    body {
-      margin: 0;
-      padding: 8px;
-      font-family: Arial, sans-serif;
-      background: transparent;
-    }
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #4a4a4a;
+    overflow: hidden;
+  }
 
-    .metrics {
-      display: flex;
-      gap: 35px;
-      align-items: center;
-    }
+  #metrics {
+    white-space: nowrap;
+    line-height: 24px;
+  }
 
-    .metric {
-      text-align: center;
-    }
-
-    .value {
-      display: block;
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    .label {
-      display: block;
-      font-size: 12px;
-      color: #666;
-      margin-top: 3px;
-    }
-  </style>
+  .value {
+    font-weight: bold;
+  }
+</style>
 </head>
 
 <body>
 
-  <div class="metrics">
-    <div class="metric">
-      <span class="value" id="citations">–</span>
-      <span class="label">Citations</span>
-    </div>
+<div id="metrics">
+  <span class="value" id="citations">–</span> citations
+  &nbsp;·&nbsp;
+  h-index <span class="value" id="hindex">–</span>
+  &nbsp;·&nbsp;
+  i10-index <span class="value" id="i10index">–</span>
+</div>
 
-    <div class="metric">
-      <span class="value" id="hindex">–</span>
-      <span class="label">h-index</span>
-    </div>
-
-    <div class="metric">
-      <span class="value" id="i10index">–</span>
-      <span class="label">i10-index</span>
-    </div>
-  </div>
-
-  <script>
-    fetch("metrics.json")
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById("citations").textContent = data.citations;
-        document.getElementById("hindex").textContent = data.hindex;
-        document.getElementById("i10index").textContent = data.i10index;
-      })
-      .catch(error => console.error("Could not load metrics:", error));
-  </script>
+<script>
+fetch("metrics.json")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("citations").textContent = data.citations;
+    document.getElementById("hindex").textContent = data.hindex;
+    document.getElementById("i10index").textContent = data.i10index;
+  });
+</script>
 
 </body>
 </html>
