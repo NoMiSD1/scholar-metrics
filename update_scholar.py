@@ -9,13 +9,7 @@ SCHOLAR_ID = "YXmK2hcAAAAJ"
 
 
 def create_svg(citations, hindex, i10index):
-    text = (
-        f"{citations:,} citations"
-        f"  ·  h-index {hindex}"
-        f"  ·  i10-index {i10index}"
-    )
-
-    text = html.escape(text)
+    citations_text = f"{citations:,}"
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg"
      width="280"
@@ -28,7 +22,13 @@ def create_svg(citations, hindex, i10index):
     font-family="Arial, Helvetica, sans-serif"
     font-size="13"
     fill="#444444">
-    {text}
+
+    <tspan font-weight="bold">{citations_text}</tspan>
+    <tspan> citations · h-index </tspan>
+    <tspan font-weight="bold">{hindex}</tspan>
+    <tspan> · i10-index </tspan>
+    <tspan font-weight="bold">{i10index}</tspan>
+
   </text>
 
 </svg>
@@ -36,7 +36,6 @@ def create_svg(citations, hindex, i10index):
 
     with open("scholar-metrics.svg", "w", encoding="utf-8") as f:
         f.write(svg)
-
 
 def main():
     print(f"Fetching Google Scholar profile: {SCHOLAR_ID}")
