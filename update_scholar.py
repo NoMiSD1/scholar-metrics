@@ -1,8 +1,8 @@
 import json
-import html
+import os
 from datetime import datetime, timezone
 
-from scholarly import scholarly
+import requests
 
 
 SCHOLAR_ID = "YXmK2hcAAAAJ"
@@ -37,24 +37,50 @@ def create_svg(citations, hindex, i10index):
     with open("scholar-metrics.svg", "w", encoding="utf-8") as f:
         f.write(svg)
 
+
 def main():
-    print(f"Fetching Google Scholar profile: {SCHOLAR_ID}")
+    print(f"Fetching Google Scholar profile via SerpApi: {SCHOLAR_ID}")
 
-    author = scholarly.search_author_id(SCHOLAR_ID)
-    author = scholarly.fill(author, sections=["basics", "indices"])
+    api_key = os.environ.get("SERPAPI_KEY")
 
-    citations = author.get("citedby")
-    hindex = author.get("hindex")
-    i10index = author.get("i10index")
+    if not api_key:
+        raise RuntimeError("SERPAPI_KEY environment variable is not set.")
+
+    response = requests.get(
+        "https://serpapi.com/search.json",
+        params={
+            "engine": "google_scholar_author",
+            "author_id": SCHOLAR_ID,
+            "hl": "en",
+            "api_key": api_key,
+        },
+        timeout=30,
+    )
+
+    response.raise_for_status()
+    data = response.json()
+
+    # Extract Google Scholar metrics from SerpApi response
+    table = data.get("cited_by", {}).get("table", [])
+
+    metrics_by_name = {}
+
+    for entry in table:
+        for name, values in entry.items():
+            metrics_by_name[name] = values.get("all")
+
+    citations = metrics_by_name.get("citations")
+    hindex = metrics_by_name.get("h_index")
+    i10index = metrics_by_name.get("i10_index")
 
     if citations is None or hindex is None or i10index is None:
-        raise RuntimeError("Could not retrieve all Scholar metrics.")
+        raise RuntimeError("Could not retrieve all Scholar metrics from SerpApi.")
 
     metrics = {
         "citations": citations,
         "hindex": hindex,
         "i10index": i10index,
-        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
     }
 
     print(metrics)
