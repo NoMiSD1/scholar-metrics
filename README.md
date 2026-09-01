@@ -4,9 +4,9 @@ This repository retrieves public author metrics from Google Scholar through the
 [SerpApi Google Scholar Author API](https://serpapi.com/google-scholar-author-api),
 generates a metrics JSON file and compact SVG for each configured researcher, and
 publishes the committed files through GitHub Pages. When citation history is
-available in the same response, it also generates an optional chart with a simple
-Google-Scholar-like view of citations per year. The compact SVGs are intended for
-embedding in university profile pages.
+available in the same response, it also generates an optional combined metrics
+and citation-history SVG for placement above a publication list. The standalone
+compact SVGs are intended for embedding elsewhere in university profile pages.
 
 SerpApi is the deliberate data source. The updater does not use `scholarly` and
 does not scrape Google Scholar directly, because direct requests from GitHub
@@ -112,10 +112,11 @@ When the response contains usable citation history, the updater also writes:
 charts/<slug>-citations.svg
 ```
 
-This optional chart is a transparent, responsive SVG with restrained vertical
-bars. The current year is marked with `*` and identified as year to date. A
-missing, empty, or invalid graph does not block the two primary outputs and does
-not cause another API request.
+This optional combined chart is a transparent, responsive 520 × 240 SVG. It
+repeats total citations, h-index, and i10-index above restrained vertical bars in
+University of Würzburg blue (`#00549F`). The current year is marked with `*` and
+identified as year to date. A missing, empty, or invalid graph does not block the
+two primary outputs and does not cause another API request.
 
 For backward compatibility, the compact SVG for the researcher selected by
 `legacy_slug` is also written to:
@@ -199,13 +200,13 @@ Embed the compact metric line with:
 >
 ```
 
-When its optional chart URL exists, embed the responsive citations-per-year chart
-with:
+When its optional chart URL exists, embed the responsive combined metrics and
+citations-per-year graphic with:
 
 ```html
 <img
   src="https://nomisd1.github.io/scholar-metrics/charts/simon-betzold-citations.svg"
-  alt="Google Scholar citations per year"
+  alt="Google Scholar metrics and citations per year"
   style="width:100%; max-width:520px; height:auto;"
 >
 ```

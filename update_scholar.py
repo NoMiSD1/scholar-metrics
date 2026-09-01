@@ -547,6 +547,9 @@ def _coordinate(value: float) -> str:
 def render_citations_svg(
     metrics: Mapping[str, Any], current_year: int
 ) -> str:
+    total_citations = _nonnegative_int(metrics.get("citations"), "citations")
+    hindex = _nonnegative_int(metrics.get("hindex"), "hindex")
+    i10index = _nonnegative_int(metrics.get("i10index"), "i10index")
     raw_history = metrics.get("citations_by_year")
     if not isinstance(raw_history, list):
         raise ScholarUpdateError("citations_by_year must be a list")
@@ -576,8 +579,8 @@ def render_citations_svg(
 
     plot_left = 46.0
     plot_right = 510.0
-    plot_top = 36.0
-    plot_bottom = 210.0
+    plot_top = 64.0
+    plot_bottom = 190.0
     plot_width = plot_right - plot_left
     plot_height = plot_bottom - plot_top
     slot_width = plot_width / len(display_history)
@@ -589,11 +592,17 @@ def render_citations_svg(
     label_step = max(1, math.ceil(30 / slot_width))
     count_step = max(1, math.ceil(22 / slot_width))
     lines = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="520" height="270" viewBox="0 0 520 270" role="img" aria-labelledby="chart-title chart-description">',
-        '  <title id="chart-title">Citations per year</title>',
-        '  <desc id="chart-description">Google Scholar citation counts by year. The current year is year to date.</desc>',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="520" height="240" viewBox="0 0 520 240" role="img" aria-labelledby="chart-title chart-description">',
+        '  <title id="chart-title">Google Scholar metrics and citations per year</title>',
+        f'  <desc id="chart-description">{total_citations:,} citations, h-index {hindex}, i10-index {i10index}. Citation counts by year; the current year is year to date.</desc>',
         '  <g font-family="Arial, Helvetica, sans-serif">',
-        '    <text x="46" y="18" font-size="13" font-weight="600" fill="#444444">Citations per year</text>',
+        '    <text x="260" y="18" text-anchor="middle" font-size="13" fill="#444444">'
+        f'<tspan font-weight="bold">{total_citations:,}</tspan>'
+        '<tspan> citations · h-index </tspan>'
+        f'<tspan font-weight="bold">{hindex}</tspan>'
+        '<tspan> · i10-index </tspan>'
+        f'<tspan font-weight="bold">{i10index}</tspan></text>',
+        '    <text x="46" y="45" font-size="13" font-weight="bold" fill="#444444">Citations per year</text>',
     ]
 
     for tick in ticks:
@@ -616,12 +625,12 @@ def render_citations_svg(
         label = f"{year}*" if year == current_year else str(year)
         safe_tooltip = html.escape(f"{year}: {citations} citations", quote=True)
         lines.append(
-            f'    <rect x="{_coordinate(bar_x)}" y="{_coordinate(bar_y)}" width="{_coordinate(bar_width)}" height="{_coordinate(max(bar_height, 0.8))}" fill="#4285f4"><title>{safe_tooltip}</title></rect>'
+            f'    <rect x="{_coordinate(bar_x)}" y="{_coordinate(bar_y)}" width="{_coordinate(bar_width)}" height="{_coordinate(max(bar_height, 0.8))}" fill="#00549F"><title>{safe_tooltip}</title></rect>'
         )
 
         show_count = index % count_step == 0 or index == len(display_history) - 1
         if show_count:
-            count_y = max(30.0, bar_y - 4)
+            count_y = max(plot_top - 4, bar_y - 4)
             lines.append(
                 f'    <text x="{_coordinate(center_x)}" y="{_coordinate(count_y)}" text-anchor="middle" font-size="9" fill="#444444">{citations}</text>'
             )
@@ -633,12 +642,12 @@ def render_citations_svg(
         )
         if show_year:
             lines.append(
-                f'    <text x="{_coordinate(center_x)}" y="228" text-anchor="middle" font-size="9" fill="#555555">{label}</text>'
+                f'    <text x="{_coordinate(center_x)}" y="208" text-anchor="middle" font-size="9" fill="#555555">{label}</text>'
             )
 
     lines.extend(
         [
-            '    <text x="510" y="258" text-anchor="end" font-size="9" fill="#666666">* year to date</text>',
+            '    <text x="510" y="233" text-anchor="end" font-size="9" fill="#666666">* year to date</text>',
             "  </g>",
             "</svg>",
             "",

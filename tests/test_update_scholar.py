@@ -338,17 +338,26 @@ class SvgRenderingTests(unittest.TestCase):
         self.assertEqual(root.attrib["viewBox"], "0 0 280 22")
         self.assertFalse(list(root.findall(f"{{{SVG_NAMESPACE}}}rect")))
 
-    def test_chart_is_valid_responsive_plain_svg_with_readable_ytd_data(self):
+    def test_combined_chart_contains_metrics_history_and_university_styling(self):
         svg = update_scholar.render_citations_svg(self.metrics, current_year=2026)
         root = ET.fromstring(svg)
         width = float(root.attrib["width"].removesuffix("px"))
+        height = float(root.attrib["height"].removesuffix("px"))
 
         self.assertEqual(root.tag, f"{{{SVG_NAMESPACE}}}svg")
-        self.assertGreaterEqual(width, 450)
-        self.assertLessEqual(width, 550)
-        self.assertIn("viewBox", root.attrib)
+        self.assertEqual(width, 520)
+        self.assertGreaterEqual(height, 230)
+        self.assertLessEqual(height, 245)
+        self.assertEqual(
+            [float(value) for value in root.attrib["viewBox"].split()],
+            [0, 0, width, height],
+        )
 
         text = normalized_svg_text(root)
+        self.assertIn(
+            "1,521 citations · h-index 19 · i10-index 24",
+            text,
+        )
         self.assertIn("Citations per year", text)
         self.assertIn("2026*", text)
         self.assertIn("* year to date", text)
@@ -367,8 +376,59 @@ class SvgRenderingTests(unittest.TestCase):
         }
         self.assertFalse(forbidden.intersection(local_name(item) for item in elements))
 
+        metrics_line = next(
+            element
+            for element in root.iter(f"{{{SVG_NAMESPACE}}}text")
+            if "h-index" in normalized_svg_text(element)
+        )
+        self.assertEqual(metrics_line.attrib.get("text-anchor"), "middle")
+        self.assertAlmostEqual(float(metrics_line.attrib["x"]), width / 2)
+        self.assertAlmostEqual(float(metrics_line.attrib["font-size"]), 13, delta=1)
+        self.assertNotIn(metrics_line.attrib.get("font-weight"), {"bold", "600", "700"})
+        bold_metric_values = [
+            normalized_svg_text(element)
+            for element in metrics_line.iter(f"{{{SVG_NAMESPACE}}}tspan")
+            if element.attrib.get("font-weight") in {"bold", "600", "700"}
+        ]
+        self.assertEqual(bold_metric_values, ["1,521", "19", "24"])
+        regular_metric_labels = [
+            element
+            for element in metrics_line.iter(f"{{{SVG_NAMESPACE}}}tspan")
+            if any(
+                label in normalized_svg_text(element)
+                for label in ("citations", "h-index", "i10-index")
+            )
+        ]
+        self.assertTrue(regular_metric_labels)
+        self.assertTrue(
+            all(
+                element.attrib.get("font-weight")
+                not in {"bold", "600", "700"}
+                for element in regular_metric_labels
+            )
+        )
+
+        heading = next(
+            element
+            for element in root.iter(f"{{{SVG_NAMESPACE}}}text")
+            if (element.text or "").strip() == "Citations per year"
+        )
+        self.assertLessEqual(float(heading.attrib["x"]), 60)
+        self.assertAlmostEqual(float(heading.attrib["font-size"]), 13, delta=1)
+        self.assertIn(heading.attrib.get("font-weight"), {"bold", "600", "700"})
+
         rectangles = [item for item in elements if local_name(item) == "rect"]
-        self.assertGreaterEqual(len(rectangles), len(self.metrics["citations_by_year"]))
+        bars = [
+            rectangle
+            for rectangle in rectangles
+            if rectangle.find(f"{{{SVG_NAMESPACE}}}title") is not None
+        ]
+        self.assertEqual(len(bars), len(self.metrics["citations_by_year"]))
+        self.assertTrue(bars)
+        self.assertTrue(
+            all(bar.attrib.get("fill") == "#00549F" for bar in bars)
+        )
+        self.assertNotIn("#4285f4", svg.lower())
         self.assertFalse(
             any(
                 item.attrib.get("x", "0") == "0"
@@ -379,6 +439,92 @@ class SvgRenderingTests(unittest.TestCase):
             ),
             "The chart must not contain an opaque full-canvas background rectangle.",
         )
+
+    def test_combined_chart_geometry_scales_to_320px_without_clipping(self):
+        root = ET.fromstring(
+            update_scholar.render_citations_svg(self.metrics, current_year=2026)
+        )
+        _, _, view_width, view_height = (
+            float(value) for value in root.attrib["viewBox"].split()
+        )
+        responsive_width = 320.0
+        responsive_scale = responsive_width / view_width
+        responsive_height = view_height * responsive_scale
+
+        self.assertAlmostEqual(float(root.attrib["width"]), view_width)
+        self.assertAlmostEqual(float(root.attrib["height"]), view_height)
+
+        for rectangle in root.iter(f"{{{SVG_NAMESPACE}}}rect"):
+            x = float(rectangle.attrib["x"])
+            y = float(rectangle.attrib["y"])
+            right = x + float(rectangle.attrib["width"])
+            bottom = y + float(rectangle.attrib["height"])
+            self.assertGreaterEqual(x, 0)
+            self.assertGreaterEqual(y, 0)
+            self.assertLessEqual(right, view_width)
+            self.assertLessEqual(bottom, view_height)
+            self.assertGreaterEqual(x * responsive_scale, 0)
+            self.assertGreaterEqual(y * responsive_scale, 0)
+            self.assertLessEqual(right * responsive_scale, responsive_width)
+            self.assertLessEqual(bottom * responsive_scale, responsive_height)
+
+        for line in root.iter(f"{{{SVG_NAMESPACE}}}line"):
+            for attribute in ("x1", "x2"):
+                coordinate = float(line.attrib[attribute])
+                self.assertGreaterEqual(coordinate, 0)
+                self.assertLessEqual(coordinate, view_width)
+                self.assertLessEqual(
+                    coordinate * responsive_scale,
+                    responsive_width,
+                )
+            for attribute in ("y1", "y2"):
+                coordinate = float(line.attrib[attribute])
+                self.assertGreaterEqual(coordinate, 0)
+                self.assertLessEqual(coordinate, view_height)
+                self.assertLessEqual(
+                    coordinate * responsive_scale,
+                    responsive_height,
+                )
+
+        for text_element in root.iter(f"{{{SVG_NAMESPACE}}}text"):
+            x = float(text_element.attrib["x"])
+            y = float(text_element.attrib["y"])
+            font_size = float(text_element.attrib["font-size"])
+            content = normalized_svg_text(text_element)
+            estimated_width = len(content) * font_size * 0.7
+            anchor = text_element.attrib.get("text-anchor", "start")
+            if anchor == "middle":
+                estimated_left = x - estimated_width / 2
+                estimated_right = x + estimated_width / 2
+            elif anchor == "end":
+                estimated_left = x - estimated_width
+                estimated_right = x
+            else:
+                estimated_left = x
+                estimated_right = x + estimated_width
+            estimated_top = y - font_size
+            estimated_bottom = y + font_size * 0.25
+
+            self.assertGreaterEqual(x, 0)
+            self.assertLessEqual(x, view_width)
+            self.assertGreaterEqual(y, 0)
+            self.assertLessEqual(y, view_height)
+            self.assertGreaterEqual(estimated_left, 0)
+            self.assertLessEqual(estimated_right, view_width)
+            self.assertGreaterEqual(estimated_top, 0)
+            self.assertLessEqual(estimated_bottom, view_height)
+            self.assertLessEqual(x * responsive_scale, responsive_width)
+            self.assertLessEqual(y * responsive_scale, responsive_height)
+            self.assertGreaterEqual(estimated_left * responsive_scale, 0)
+            self.assertLessEqual(
+                estimated_right * responsive_scale,
+                responsive_width,
+            )
+            self.assertGreaterEqual(estimated_top * responsive_scale, 0)
+            self.assertLessEqual(
+                estimated_bottom * responsive_scale,
+                responsive_height,
+            )
 
     def test_chart_marks_current_year_even_when_api_omits_zero_ytd_point(self):
         metrics = copy.deepcopy(self.metrics)
@@ -409,9 +555,11 @@ class SvgRenderingTests(unittest.TestCase):
 
         for history, expected_ticks in cases:
             with self.subTest(history=history):
+                metrics = copy.deepcopy(self.metrics)
+                metrics["citations_by_year"] = history
                 root = ET.fromstring(
                     update_scholar.render_citations_svg(
-                        {"citations_by_year": history},
+                        metrics,
                         current_year=2026,
                     )
                 )
@@ -443,9 +591,11 @@ class SvgRenderingTests(unittest.TestCase):
             {"year": 2025, "citations": 4},
             {"year": 2026, "citations": 2},
         ]
+        metrics = copy.deepcopy(self.metrics)
+        metrics["citations_by_year"] = history
         root = ET.fromstring(
             update_scholar.render_citations_svg(
-                {"citations_by_year": history},
+                metrics,
                 current_year=2026,
             )
         )
