@@ -1,0 +1,418 @@
+{
+  "schema_version": 1,
+  "slug": "simon-betzold",
+  "name": "Simon Betzold",
+  "scholar_id": "YXmK2hcAAAAJ",
+  "citations": 1523,
+  "hindex": 19,
+  "i10index": 24,
+  "updated": "2026-09-01",
+  "citations_by_year": [
+    {
+      "year": 2017,
+      "citations": 39
+    },
+    {
+      "year": 2018,
+      "citations": 80
+    },
+    {
+      "year": 2019,
+      "citations": 109
+    },
+    {
+      "year": 2020,
+      "citations": 138
+    },
+    {
+      "year": 2021,
+      "citations": 168
+    },
+    {
+      "year": 2022,
+      "citations": 204
+    },
+    {
+      "year": 2023,
+      "citations": 176
+    },
+    {
+      "year": 2024,
+      "citations": 204
+    },
+    {
+      "year": 2025,
+      "citations": 224
+    },
+    {
+      "year": 2026,
+      "citations": 168
+    }
+  ],
+  "metrics_since": {
+    "year": 2021,
+    "citations": 1145,
+    "hindex": 19,
+    "i10index": 22
+  },
+  "author": {
+    "name": "Simon Betzold",
+    "affiliations": "Physics Institute (TeP), Würzburg University",
+    "email": "Verified email at uniwuerzburg.de",
+    "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_128.png",
+    "interests": [
+      {
+        "title": "Microcavities",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:microcavities"
+      },
+      {
+        "title": "Strong light-matter coupling",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:strong_light_matter_coupling"
+      },
+      {
+        "title": "Polaritonics",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:polaritonics"
+      }
+    ]
+  },
+  "articles": [
+    {
+      "title": "Room-temperature Tamm-plasmon exciton-polaritons with a WSe2 monolayer",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:qjMakFHDy7sC",
+      "citation_id": "YXmK2hcAAAAJ:qjMakFHDy7sC",
+      "authors": "N Lundt, S Klembt, E Cherotchenko, S Betzold, O Iff, AV Nalitov, M Klaas, ...",
+      "publication": "Nature communications 7 (1), 13328, 2016",
+      "year": 2016,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9130626029594451057",
+        "cites_id": "9130626029594451057",
+        "value": 332
+      }
+    },
+    {
+      "title": "Spontaneous Emission Enhancement in Strain-Induced WSe2 Monolayer-Based Quantum Light Sources on Metallic Surfaces",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:UeHWp8X0CEIC",
+      "citation_id": "YXmK2hcAAAAJ:UeHWp8X0CEIC",
+      "authors": "LN Tripathi, O Iff, S Betzold, Ł Dusanowski, M Emmerling, K Moon, YJ Lee, ...",
+      "publication": "ACS photonics 5 (5), 1919-1926, 2018",
+      "year": 2018,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4174892677790926093",
+        "cites_id": "4174892677790926093",
+        "value": 137
+      }
+    },
+    {
+      "title": "Room temperature organic exciton–polariton condensate in a lattice",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:5nxA0vEk-isC",
+      "citation_id": "YXmK2hcAAAAJ:5nxA0vEk-isC",
+      "authors": "M Dusel, S Betzold, OA Egorov, S Klembt, J Ohmer, U Fischer, S Höfling, ...",
+      "publication": "Nature communications 11 (1), 2863, 2020",
+      "year": 2020,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=682068227460764124",
+        "cites_id": "682068227460764124",
+        "value": 132
+      }
+    },
+    {
+      "title": "Purcell-Enhanced Single Photon Source Based on a Deterministically Placed WSe2 Monolayer Quantum Dot in a Circular Bragg Grating Cavity",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:KlAtU1dfN6UC",
+      "citation_id": "YXmK2hcAAAAJ:KlAtU1dfN6UC",
+      "authors": "O Iff, Q Buchinger, M Moczała-Dusanowska, M Kamp, S Betzold, ...",
+      "publication": "Nano letters 21 (11), 4715-4720, 2021",
+      "year": 2021,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10521015209057751264",
+        "cites_id": "10521015209057751264",
+        "value": 119
+      }
+    },
+    {
+      "title": "Observation of bosonic condensation in a hybrid monolayer MoSe2-GaAs microcavity",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:W7OEmFMy1HYC",
+      "citation_id": "YXmK2hcAAAAJ:W7OEmFMy1HYC",
+      "authors": "M Waldherr, N Lundt, M Klaas, S Betzold, M Wurdack, V Baumann, ...",
+      "publication": "Nature communications 9 (1), 3286, 2018",
+      "year": 2018,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3289421224479397562,11750886153563487424",
+        "cites_id": "3289421224479397562,11750886153563487424",
+        "value": 112
+      }
+    },
+    {
+      "title": "Coherence and interaction in confined room-temperature polariton condensates with Frenkel excitons",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:hqOjcs7Dif8C",
+      "citation_id": "YXmK2hcAAAAJ:hqOjcs7Dif8C",
+      "authors": "S Betzold, M Dusel, O Kyriienko, CP Dietrich, S Klembt, J Ohmer, ...",
+      "publication": "ACS Photonics 7 (2), 384-392, 2020",
+      "year": 2020,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1217181432794908888",
+        "cites_id": "1217181432794908888",
+        "value": 86
+      }
+    },
+    {
+      "title": "Room-temperature topological polariton laser in an organic lattice",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:kNdYIx-mwKoC",
+      "citation_id": "YXmK2hcAAAAJ:kNdYIx-mwKoC",
+      "authors": "M Dusel, S Betzold, TH Harder, M Emmerling, J Beierlein, J Ohmer, ...",
+      "publication": "Nano Letters 21 (15), 6398-6405, 2021",
+      "year": 2021,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1265937662809785572",
+        "cites_id": "1265937662809785572",
+        "value": 70
+      }
+    },
+    {
+      "title": "Deterministic coupling of quantum emitters in WSe2 monolayers to plasmonic nanocavities",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:WF5omc3nYNoC",
+      "citation_id": "YXmK2hcAAAAJ:WF5omc3nYNoC",
+      "authors": "O Iff, N Lundt, S Betzold, LN Tripathi, M Emmerling, S Tongay, YJ Lee, ...",
+      "publication": "Optics Express 26 (20), 25944-25951, 2018",
+      "year": 2018,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13274080943447672455",
+        "cites_id": "13274080943447672455",
+        "value": 63
+      }
+    },
+    {
+      "title": "Valley polarized relaxation and upconversion luminescence from Tamm-plasmon trion–polaritons with a MoSe2 monolayer",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:u5HHmVD_uO8C",
+      "citation_id": "YXmK2hcAAAAJ:u5HHmVD_uO8C",
+      "authors": "N Lundt, P Nagler, A Nalitov, S Klembt, M Wurdack, S Stoll, TH Harder, ...",
+      "publication": "2D Materials 4 (2), 025096, 2017",
+      "year": 2017,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=658686685389950885",
+        "cites_id": "658686685389950885",
+        "value": 54
+      }
+    },
+    {
+      "title": "Observation of macroscopic valley-polarized monolayer exciton-polaritons at room temperature",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:Y0pCki6q_DkC",
+      "citation_id": "YXmK2hcAAAAJ:Y0pCki6q_DkC",
+      "authors": "N Lundt, S Stoll, P Nagler, A Nalitov, S Klembt, S Betzold, J Goddard, ...",
+      "publication": "Physical Review B 96 (24), 241403, 2017",
+      "year": 2017,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18189218880569369859",
+        "cites_id": "18189218880569369859",
+        "value": 48
+      }
+    },
+    {
+      "title": "Intrinsic and environmental effects on the interference properties of a high-performance quantum dot single-photon source",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:eQOLeE2rZwMC",
+      "citation_id": "YXmK2hcAAAAJ:eQOLeE2rZwMC",
+      "authors": "S Gerhardt, J Iles-Smith, DPS McCutcheon, YM He, S Unsleber, S Betzold, ...",
+      "publication": "Physical Review B 97 (19), 195432, 2018",
+      "year": 2018,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12939651973548140553",
+        "cites_id": "12939651973548140553",
+        "value": 37
+      }
+    },
+    {
+      "title": "Nonresonant spin selection methods and polarization control in exciton-polariton condensates",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:roLk4NBRz8UC",
+      "citation_id": "YXmK2hcAAAAJ:roLk4NBRz8UC",
+      "authors": "M Klaas, OA Egorov, TCH Liew, A Nalitov, V Marković, H Suchomel, ...",
+      "publication": "Physical Review B 99 (11), 115303, 2019",
+      "year": 2019,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7400821725118570454",
+        "cites_id": "7400821725118570454",
+        "value": 35
+      }
+    },
+    {
+      "title": "Polarized and unpolarized emission from a single emitter in a bullseye resonator",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:qxL8FJ1GzNcC",
+      "citation_id": "YXmK2hcAAAAJ:qxL8FJ1GzNcC",
+      "authors": "G Peniakov, Q Buchinger, M Helal, S Betzold, Y Reum, MB Rota, G Ronco, ...",
+      "publication": "Laser & Photonics Reviews 18 (4), 2300835, 2024",
+      "year": 2024,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15408972599324793259",
+        "cites_id": "15408972599324793259",
+        "value": 33
+      }
+    },
+    {
+      "title": "Tunable light–matter hybridization in open organic microcavities",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:u-x6o8ySG0sC",
+      "citation_id": "YXmK2hcAAAAJ:u-x6o8ySG0sC",
+      "authors": "S Betzold, S Herbst, AAP Trichet, JM Smith, F Würthner, S Höfling, ...",
+      "publication": "Acs Photonics 5 (1), 90-94, 2018",
+      "year": 2018,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10998270762560950530",
+        "cites_id": "10998270762560950530",
+        "value": 30
+      }
+    },
+    {
+      "title": "Optical properties of circular Bragg gratings with labyrinth geometry to enable electrical contacts",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:M3ejUd6NZC8C",
+      "citation_id": "YXmK2hcAAAAJ:M3ejUd6NZC8C",
+      "authors": "Q Buchinger, S Betzold, S Höfling, T Huber-Loyola",
+      "publication": "Applied Physics Letters 122 (11), 2023",
+      "year": 2023,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16374994791114582292,9047520857332211320",
+        "cites_id": "16374994791114582292,9047520857332211320",
+        "value": 27
+      }
+    },
+    {
+      "title": "Polarization-dependent light-matter coupling and highly indistinguishable resonant fluorescence photons from quantum dot-micropillar cavities with elliptical cross section",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:_FxGoFyzp5QC",
+      "citation_id": "YXmK2hcAAAAJ:_FxGoFyzp5QC",
+      "authors": "S Gerhardt, M Deppisch, S Betzold, TH Harder, TCH Liew, A Predojević, ...",
+      "publication": "Physical Review B 100 (11), 115305, 2019",
+      "year": 2019,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2582848162083519553",
+        "cites_id": "2582848162083519553",
+        "value": 26
+      }
+    },
+    {
+      "title": "Observation of Kardar-Parisi-Zhang universal scaling in two dimensions",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:R3hNpaxXUhUC",
+      "citation_id": "YXmK2hcAAAAJ:R3hNpaxXUhUC",
+      "authors": "S Widmann, S Dam, J Düreth, CG Mayer, R Daviet, CP Zelle, D Laibacher, ...",
+      "publication": "Science 392 (6794), 221-224, 2026",
+      "year": 2026,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11788227964068867689",
+        "cites_id": "11788227964068867689",
+        "value": 23
+      }
+    },
+    {
+      "title": "Electro-optical switching of a topological polariton laser",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:ULOm3_A8WrAC",
+      "citation_id": "YXmK2hcAAAAJ:ULOm3_A8WrAC",
+      "authors": "P Gagel, TH Harder, S Betzold, OA Egorov, J Beierlein, H Suchomel, ...",
+      "publication": "ACS Photonics 9 (2), 405-412, 2022",
+      "year": 2022,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9675745823950386532",
+        "cites_id": "9675745823950386532",
+        "value": 22
+      }
+    },
+    {
+      "title": "An electrically pumped topological polariton laser",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:4DMP91E08xMC",
+      "citation_id": "YXmK2hcAAAAJ:4DMP91E08xMC",
+      "authors": "P Gagel, OA Egorov, F Dzimira, J Beierlein, M Emmerling, A Wolf, ...",
+      "publication": "Nano Letters 24 (22), 6538-6544, 2024",
+      "year": 2024,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16733492845025318039",
+        "cites_id": "16733492845025318039",
+        "value": 19
+      }
+    },
+    {
+      "title": "Spatio-temporal coherence in vertically emitting GaAs-based electrically driven polariton lasers",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:3fE2CSJIrl8C",
+      "citation_id": "YXmK2hcAAAAJ:3fE2CSJIrl8C",
+      "authors": "H Suchomel, M Klaas, S Betzold, P Gagel, J Beierlein, S Klembt, ...",
+      "publication": "Applied Physics Letters 116 (17), 2020",
+      "year": 2020,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6373512443070627795",
+        "cites_id": "6373512443070627795",
+        "value": 19
+      }
+    }
+  ],
+  "public_access": {
+    "link": "https://scholar.google.com/citations?view_op=list_mandates&hl=en&user=YXmK2hcAAAAJ",
+    "available": 28,
+    "not_available": 4
+  },
+  "coauthors": [
+    {
+      "name": "Sven Höfling",
+      "link": "https://scholar.google.com/citations?user=ZVggr60AAAAJ&hl=en",
+      "author_id": "ZVggr60AAAAJ",
+      "affiliations": "University of Würzburg, Germany",
+      "email": "Verified email at physik.uni-wuerzburg.de",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=ZVggr60AAAAJ&citpid=3"
+    },
+    {
+      "name": "Christian Schneider",
+      "link": "https://scholar.google.com/citations?user=MVBrWhQAAAAJ&hl=en",
+      "author_id": "MVBrWhQAAAAJ",
+      "affiliations": "Carl von Ossietzky Universität Oldenburg",
+      "email": "Verified email at uol.de",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Sebastian Klembt",
+      "link": "https://scholar.google.com/citations?user=tV9DL7UAAAAJ&hl=en",
+      "author_id": "tV9DL7UAAAAJ",
+      "affiliations": "Technische Physik, University of Würzburg, Germany",
+      "email": "Verified email at physik.uni-wuerzburg.de",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=tV9DL7UAAAAJ&citpid=3"
+    },
+    {
+      "name": "Oliver Iff",
+      "link": "https://scholar.google.com/citations?user=k8fMPYYAAAAJ&hl=en",
+      "author_id": "k8fMPYYAAAAJ",
+      "affiliations": "University Würzburg",
+      "email": "Verified email at physik.uni-wuerzburg.de",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Christof P. Dietrich",
+      "link": "https://scholar.google.com/citations?user=XcZGM-0AAAAJ&hl=en",
+      "author_id": "XcZGM-0AAAAJ",
+      "affiliations": "Julius-Maximilians-Universität Würzburg",
+      "email": "Verified email at physik.uni-wuerzburg.de",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Anton Nalitov",
+      "link": "https://scholar.google.com/citations?user=pGY1pusAAAAJ&hl=en",
+      "author_id": "pGY1pusAAAAJ",
+      "affiliations": "Moscow Institute of Physics and Technology",
+      "email": "Verified email at mipt.ru",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=pGY1pusAAAAJ&citpid=1"
+    },
+    {
+      "name": "Utz Fischer",
+      "link": "https://scholar.google.com/citations?user=_38Q0YkAAAAJ&hl=en",
+      "author_id": "_38Q0YkAAAAJ",
+      "affiliations": "Professor für Biochemie, Universität Würzburg",
+      "email": "Verified email at biozentrum.uni-wuerzburg.de",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=_38Q0YkAAAAJ&citpid=1"
+    },
+    {
+      "name": "Tristan H. Harder",
+      "link": "https://scholar.google.com/citations?user=RUss_hoAAAAJ&hl=en",
+      "author_id": "RUss_hoAAAAJ",
+      "affiliations": "Phd Student, Universität Würzburg",
+      "email": "Verified email at physik.uni-wuerzburg.de",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Martin Klaas",
+      "link": "https://scholar.google.com/citations?user=fbAz4OAAAAAJ&hl=en",
+      "author_id": "fbAz4OAAAAAJ",
+      "email": "Verified email at physik.uni-wuerzburg.de",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    }
+  ]
+}

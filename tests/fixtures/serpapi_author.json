@@ -1,0 +1,93 @@
+{
+  "search_metadata": {
+    "id": "fixture-search-id",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.example/search.json?api_key=fixture-secret-must-not-leak"
+  },
+  "search_parameters": {
+    "engine": "google_scholar_author",
+    "author_id": "YXmK2hcAAAAJ",
+    "hl": "en",
+    "api_key": "fixture-secret-must-not-leak"
+  },
+  "author": {
+    "name": "Simon Betzold",
+    "affiliations": "University of W\u00fcrzburg & Institute <Physics>",
+    "email": "Verified email at uni-wuerzburg.de",
+    "interests": [
+      {
+        "title": "Exciton-polaritons & photonics",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&mauthors=label:photonics",
+        "serpapi_link": "https://serpapi.example/search.json?api_key=fixture-secret-must-not-leak"
+      },
+      {
+        "title": "Quantum fluids",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&mauthors=label:quantum_fluids"
+      }
+    ],
+    "thumbnail": "https://scholar.googleusercontent.com/fixture.jpg",
+    "unrecognized_profile_field": "must not be copied"
+  },
+  "articles": [
+    {
+      "title": "Light & matter <strong coupling>",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=fixture:1",
+      "citation_id": "YXmK2hcAAAAJ:fixture1",
+      "authors": "S Betzold, A Example",
+      "publication": "Journal of Fixtures 12, 34-56, 2025",
+      "cited_by": {
+        "value": "17",
+        "link": "https://scholar.google.com/scholar?cites=123",
+        "serpapi_link": "https://serpapi.example/search.json?api_key=fixture-secret-must-not-leak"
+      },
+      "year": "2025",
+      "unrecognized_article_field": "must not be copied"
+    },
+    {
+      "title": "A publication without optional citation data",
+      "authors": "S Betzold",
+      "publication": "Fixture Letters, 2024",
+      "year": 2024
+    }
+  ],
+  "cited_by": {
+    "table": [
+      {
+        "citations": {
+          "all": 1521,
+          "since_2021": "817"
+        }
+      },
+      {
+        "h_index": {
+          "all": "19",
+          "since_2021": 15
+        }
+      },
+      {
+        "i10_index": {
+          "all": 24,
+          "since_2021": "18"
+        }
+      }
+    ],
+    "graph": [
+      {
+        "year": "2025",
+        "citations": 212
+      },
+      {
+        "year": 2024,
+        "citations": "101"
+      },
+      {
+        "year": "2026",
+        "citations": "37"
+      }
+    ]
+  },
+  "serpapi_pagination": {
+    "next": "https://serpapi.example/search.json?api_key=fixture-secret-must-not-leak&cstart=20"
+  },
+  "unrecognized_top_level_field": "must not be copied"
+}
