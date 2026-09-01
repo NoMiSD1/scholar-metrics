@@ -1,48 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="270" viewBox="0 0 520 270" role="img" aria-labelledby="chart-title chart-description">
-  <title id="chart-title">Citations per year</title>
-  <desc id="chart-description">Google Scholar citation counts by year. The current year is year to date.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="240" viewBox="0 0 520 240" role="img" aria-labelledby="chart-title chart-description">
+  <title id="chart-title">Google Scholar metrics and citations per year</title>
+  <desc id="chart-description">1,523 citations, h-index 19, i10-index 24. Citation counts by year; the current year is year to date.</desc>
   <g font-family="Arial, Helvetica, sans-serif">
-    <text x="46" y="18" font-size="13" font-weight="600" fill="#444444">Citations per year</text>
-    <line x1="46" y1="210" x2="510" y2="210" stroke="#e5e5e5" stroke-width="1"/>
-    <text x="39" y="213" text-anchor="end" font-size="9" fill="#666666">0</text>
-    <line x1="46" y1="166.5" x2="510" y2="166.5" stroke="#e5e5e5" stroke-width="1"/>
-    <text x="39" y="169.5" text-anchor="end" font-size="9" fill="#666666">56</text>
-    <line x1="46" y1="123" x2="510" y2="123" stroke="#e5e5e5" stroke-width="1"/>
-    <text x="39" y="126" text-anchor="end" font-size="9" fill="#666666">112</text>
-    <line x1="46" y1="79.5" x2="510" y2="79.5" stroke="#e5e5e5" stroke-width="1"/>
-    <text x="39" y="82.5" text-anchor="end" font-size="9" fill="#666666">168</text>
-    <line x1="46" y1="36" x2="510" y2="36" stroke="#e5e5e5" stroke-width="1"/>
-    <text x="39" y="39" text-anchor="end" font-size="9" fill="#666666">224</text>
-    <rect x="57.2" y="179.71" width="24" height="30.29" fill="#4285f4"><title>2017: 39 citations</title></rect>
-    <text x="69.2" y="175.71" text-anchor="middle" font-size="9" fill="#444444">39</text>
-    <text x="69.2" y="228" text-anchor="middle" font-size="9" fill="#555555">2017</text>
-    <rect x="103.6" y="147.86" width="24" height="62.14" fill="#4285f4"><title>2018: 80 citations</title></rect>
-    <text x="115.6" y="143.86" text-anchor="middle" font-size="9" fill="#444444">80</text>
-    <text x="115.6" y="228" text-anchor="middle" font-size="9" fill="#555555">2018</text>
-    <rect x="150" y="125.33" width="24" height="84.67" fill="#4285f4"><title>2019: 109 citations</title></rect>
-    <text x="162" y="121.33" text-anchor="middle" font-size="9" fill="#444444">109</text>
-    <text x="162" y="228" text-anchor="middle" font-size="9" fill="#555555">2019</text>
-    <rect x="196.4" y="102.8" width="24" height="107.2" fill="#4285f4"><title>2020: 138 citations</title></rect>
-    <text x="208.4" y="98.8" text-anchor="middle" font-size="9" fill="#444444">138</text>
-    <text x="208.4" y="228" text-anchor="middle" font-size="9" fill="#555555">2020</text>
-    <rect x="242.8" y="79.5" width="24" height="130.5" fill="#4285f4"><title>2021: 168 citations</title></rect>
-    <text x="254.8" y="75.5" text-anchor="middle" font-size="9" fill="#444444">168</text>
-    <text x="254.8" y="228" text-anchor="middle" font-size="9" fill="#555555">2021</text>
-    <rect x="289.2" y="51.54" width="24" height="158.46" fill="#4285f4"><title>2022: 204 citations</title></rect>
-    <text x="301.2" y="47.54" text-anchor="middle" font-size="9" fill="#444444">204</text>
-    <text x="301.2" y="228" text-anchor="middle" font-size="9" fill="#555555">2022</text>
-    <rect x="335.6" y="73.29" width="24" height="136.71" fill="#4285f4"><title>2023: 176 citations</title></rect>
-    <text x="347.6" y="69.29" text-anchor="middle" font-size="9" fill="#444444">176</text>
-    <text x="347.6" y="228" text-anchor="middle" font-size="9" fill="#555555">2023</text>
-    <rect x="382" y="51.54" width="24" height="158.46" fill="#4285f4"><title>2024: 204 citations</title></rect>
-    <text x="394" y="47.54" text-anchor="middle" font-size="9" fill="#444444">204</text>
-    <text x="394" y="228" text-anchor="middle" font-size="9" fill="#555555">2024</text>
-    <rect x="428.4" y="36" width="24" height="174" fill="#4285f4"><title>2025: 224 citations</title></rect>
-    <text x="440.4" y="32" text-anchor="middle" font-size="9" fill="#444444">224</text>
-    <text x="440.4" y="228" text-anchor="middle" font-size="9" fill="#555555">2025</text>
-    <rect x="474.8" y="79.5" width="24" height="130.5" fill="#4285f4"><title>2026: 168 citations</title></rect>
-    <text x="486.8" y="75.5" text-anchor="middle" font-size="9" fill="#444444">168</text>
-    <text x="486.8" y="228" text-anchor="middle" font-size="9" fill="#555555">2026*</text>
-    <text x="510" y="258" text-anchor="end" font-size="9" fill="#666666">* year to date</text>
+    <text x="260" y="18" text-anchor="middle" font-size="13" fill="#444444"><tspan font-weight="bold">1,523</tspan><tspan> citations · h-index </tspan><tspan font-weight="bold">19</tspan><tspan> · i10-index </tspan><tspan font-weight="bold">24</tspan></text>
+    <text x="46" y="45" font-size="13" font-weight="bold" fill="#444444">Citations per year</text>
+    <line x1="46" y1="190" x2="510" y2="190" stroke="#e5e5e5" stroke-width="1"/>
+    <text x="39" y="193" text-anchor="end" font-size="9" fill="#666666">0</text>
+    <line x1="46" y1="158.5" x2="510" y2="158.5" stroke="#e5e5e5" stroke-width="1"/>
+    <text x="39" y="161.5" text-anchor="end" font-size="9" fill="#666666">56</text>
+    <line x1="46" y1="127" x2="510" y2="127" stroke="#e5e5e5" stroke-width="1"/>
+    <text x="39" y="130" text-anchor="end" font-size="9" fill="#666666">112</text>
+    <line x1="46" y1="95.5" x2="510" y2="95.5" stroke="#e5e5e5" stroke-width="1"/>
+    <text x="39" y="98.5" text-anchor="end" font-size="9" fill="#666666">168</text>
+    <line x1="46" y1="64" x2="510" y2="64" stroke="#e5e5e5" stroke-width="1"/>
+    <text x="39" y="67" text-anchor="end" font-size="9" fill="#666666">224</text>
+    <rect x="57.2" y="168.06" width="24" height="21.94" fill="#00549F"><title>2017: 39 citations</title></rect>
+    <text x="69.2" y="164.06" text-anchor="middle" font-size="9" fill="#444444">39</text>
+    <text x="69.2" y="208" text-anchor="middle" font-size="9" fill="#555555">2017</text>
+    <rect x="103.6" y="145" width="24" height="45" fill="#00549F"><title>2018: 80 citations</title></rect>
+    <text x="115.6" y="141" text-anchor="middle" font-size="9" fill="#444444">80</text>
+    <text x="115.6" y="208" text-anchor="middle" font-size="9" fill="#555555">2018</text>
+    <rect x="150" y="128.69" width="24" height="61.31" fill="#00549F"><title>2019: 109 citations</title></rect>
+    <text x="162" y="124.69" text-anchor="middle" font-size="9" fill="#444444">109</text>
+    <text x="162" y="208" text-anchor="middle" font-size="9" fill="#555555">2019</text>
+    <rect x="196.4" y="112.38" width="24" height="77.62" fill="#00549F"><title>2020: 138 citations</title></rect>
+    <text x="208.4" y="108.38" text-anchor="middle" font-size="9" fill="#444444">138</text>
+    <text x="208.4" y="208" text-anchor="middle" font-size="9" fill="#555555">2020</text>
+    <rect x="242.8" y="95.5" width="24" height="94.5" fill="#00549F"><title>2021: 168 citations</title></rect>
+    <text x="254.8" y="91.5" text-anchor="middle" font-size="9" fill="#444444">168</text>
+    <text x="254.8" y="208" text-anchor="middle" font-size="9" fill="#555555">2021</text>
+    <rect x="289.2" y="75.25" width="24" height="114.75" fill="#00549F"><title>2022: 204 citations</title></rect>
+    <text x="301.2" y="71.25" text-anchor="middle" font-size="9" fill="#444444">204</text>
+    <text x="301.2" y="208" text-anchor="middle" font-size="9" fill="#555555">2022</text>
+    <rect x="335.6" y="91" width="24" height="99" fill="#00549F"><title>2023: 176 citations</title></rect>
+    <text x="347.6" y="87" text-anchor="middle" font-size="9" fill="#444444">176</text>
+    <text x="347.6" y="208" text-anchor="middle" font-size="9" fill="#555555">2023</text>
+    <rect x="382" y="75.25" width="24" height="114.75" fill="#00549F"><title>2024: 204 citations</title></rect>
+    <text x="394" y="71.25" text-anchor="middle" font-size="9" fill="#444444">204</text>
+    <text x="394" y="208" text-anchor="middle" font-size="9" fill="#555555">2024</text>
+    <rect x="428.4" y="64" width="24" height="126" fill="#00549F"><title>2025: 224 citations</title></rect>
+    <text x="440.4" y="60" text-anchor="middle" font-size="9" fill="#444444">224</text>
+    <text x="440.4" y="208" text-anchor="middle" font-size="9" fill="#555555">2025</text>
+    <rect x="474.8" y="95.5" width="24" height="94.5" fill="#00549F"><title>2026: 168 citations</title></rect>
+    <text x="486.8" y="91.5" text-anchor="middle" font-size="9" fill="#444444">168</text>
+    <text x="486.8" y="208" text-anchor="middle" font-size="9" fill="#555555">2026*</text>
+    <text x="510" y="233" text-anchor="end" font-size="9" fill="#666666">* year to date</text>
   </g>
 </svg>
