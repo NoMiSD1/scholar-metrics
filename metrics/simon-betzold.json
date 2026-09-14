@@ -3,10 +3,10 @@
   "slug": "simon-betzold",
   "name": "Simon Betzold",
   "scholar_id": "YXmK2hcAAAAJ",
-  "citations": 1527,
+  "citations": 1537,
   "hindex": 19,
   "i10index": 24,
-  "updated": "2026-09-10",
+  "updated": "2026-09-14",
   "citations_by_year": [
     {
       "year": 2017,
@@ -14,7 +14,7 @@
     },
     {
       "year": 2018,
-      "citations": 80
+      "citations": 81
     },
     {
       "year": 2019,
@@ -46,12 +46,12 @@
     },
     {
       "year": 2026,
-      "citations": 170
+      "citations": 179
     }
   ],
   "metrics_since": {
     "year": 2021,
-    "citations": 1148,
+    "citations": 1157,
     "hindex": 19,
     "i10index": 22
   },
@@ -86,7 +86,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9130626029594451057",
         "cites_id": "9130626029594451057",
-        "value": 333
+        "value": 336
       }
     },
     {
@@ -99,7 +99,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4174892677790926093",
         "cites_id": "4174892677790926093",
-        "value": 137
+        "value": 138
       }
     },
     {
@@ -112,7 +112,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=682068227460764124",
         "cites_id": "682068227460764124",
-        "value": 133
+        "value": 134
       }
     },
     {
@@ -125,7 +125,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10521015209057751264",
         "cites_id": "10521015209057751264",
-        "value": 120
+        "value": 121
       }
     },
     {
@@ -151,7 +151,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1217181432794908888",
         "cites_id": "1217181432794908888",
-        "value": 86
+        "value": 87
       }
     },
     {
@@ -294,7 +294,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11788227964068867689",
         "cites_id": "11788227964068867689",
-        "value": 23
+        "value": 24
       }
     },
     {
@@ -311,19 +311,6 @@
       }
     },
     {
-      "title": "An electrically pumped topological polariton laser",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:4DMP91E08xMC",
-      "citation_id": "YXmK2hcAAAAJ:4DMP91E08xMC",
-      "authors": "P Gagel, OA Egorov, F Dzimira, J Beierlein, M Emmerling, A Wolf, ...",
-      "publication": "Nano Letters 24 (22), 6538-6544, 2024",
-      "year": 2024,
-      "cited_by": {
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16733492845025318039",
-        "cites_id": "16733492845025318039",
-        "value": 19
-      }
-    },
-    {
       "title": "Spatio-temporal coherence in vertically emitting GaAs-based electrically driven polariton lasers",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:3fE2CSJIrl8C",
       "citation_id": "YXmK2hcAAAAJ:3fE2CSJIrl8C",
@@ -333,6 +320,19 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6373512443070627795",
         "cites_id": "6373512443070627795",
+        "value": 20
+      }
+    },
+    {
+      "title": "An electrically pumped topological polariton laser",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:4DMP91E08xMC",
+      "citation_id": "YXmK2hcAAAAJ:4DMP91E08xMC",
+      "authors": "P Gagel, OA Egorov, F Dzimira, J Beierlein, M Emmerling, A Wolf, ...",
+      "publication": "Nano Letters 24 (22), 6538-6544, 2024",
+      "year": 2024,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16733492845025318039",
+        "cites_id": "16733492845025318039",
         "value": 19
       }
     }
