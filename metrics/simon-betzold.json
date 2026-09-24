@@ -6,7 +6,7 @@
   "citations": 1536,
   "hindex": 19,
   "i10index": 24,
-  "updated": "2026-09-21",
+  "updated": "2026-09-24",
   "citations_by_year": [
     {
       "year": 2017,
@@ -42,11 +42,11 @@
     },
     {
       "year": 2025,
-      "citations": 223
+      "citations": 222
     },
     {
       "year": 2026,
-      "citations": 180
+      "citations": 181
     }
   ],
   "metrics_since": {
