@@ -3,10 +3,10 @@
   "slug": "simon-betzold",
   "name": "Simon Betzold",
   "scholar_id": "YXmK2hcAAAAJ",
-  "citations": 1540,
+  "citations": 1546,
   "hindex": 20,
   "i10index": 24,
-  "updated": "2026-10-01",
+  "updated": "2026-10-05",
   "citations_by_year": [
     {
       "year": 2017,
@@ -26,7 +26,7 @@
     },
     {
       "year": 2021,
-      "citations": 168
+      "citations": 169
     },
     {
       "year": 2022,
@@ -42,16 +42,16 @@
     },
     {
       "year": 2025,
-      "citations": 221
+      "citations": 224
     },
     {
       "year": 2026,
-      "citations": 186
+      "citations": 188
     }
   ],
   "metrics_since": {
     "year": 2021,
-    "citations": 1160,
+    "citations": 1166,
     "hindex": 19,
     "i10index": 22
   },
@@ -99,7 +99,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4174892677790926093",
         "cites_id": "4174892677790926093",
-        "value": 138
+        "value": 139
       }
     },
     {
@@ -112,7 +112,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=682068227460764124",
         "cites_id": "682068227460764124",
-        "value": 133
+        "value": 134
       }
     },
     {
@@ -125,7 +125,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10521015209057751264",
         "cites_id": "10521015209057751264",
-        "value": 121
+        "value": 123
       }
     },
     {
@@ -177,7 +177,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13274080943447672455",
         "cites_id": "13274080943447672455",
-        "value": 63
+        "value": 64
       }
     },
     {
