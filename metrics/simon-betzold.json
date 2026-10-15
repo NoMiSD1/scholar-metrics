@@ -3,10 +3,10 @@
   "slug": "simon-betzold",
   "name": "Simon Betzold",
   "scholar_id": "YXmK2hcAAAAJ",
-  "citations": 1556,
+  "citations": 1559,
   "hindex": 20,
   "i10index": 24,
-  "updated": "2026-10-12",
+  "updated": "2026-10-15",
   "citations_by_year": [
     {
       "year": 2017,
@@ -14,7 +14,7 @@
     },
     {
       "year": 2018,
-      "citations": 80
+      "citations": 81
     },
     {
       "year": 2019,
@@ -46,12 +46,12 @@
     },
     {
       "year": 2026,
-      "citations": 198
+      "citations": 200
     }
   ],
   "metrics_since": {
     "year": 2021,
-    "citations": 1177,
+    "citations": 1179,
     "hindex": 19,
     "i10index": 22
   },
@@ -86,7 +86,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9130626029594451057",
         "cites_id": "9130626029594451057",
-        "value": 336
+        "value": 337
       }
     },
     {
@@ -125,7 +125,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10521015209057751264",
         "cites_id": "10521015209057751264",
-        "value": 124
+        "value": 125
       }
     },
     {
