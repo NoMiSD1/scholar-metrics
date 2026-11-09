@@ -3,10 +3,10 @@
   "slug": "simon-betzold",
   "name": "Simon Betzold",
   "scholar_id": "YXmK2hcAAAAJ",
-  "citations": 1567,
+  "citations": 1574,
   "hindex": 20,
   "i10index": 24,
-  "updated": "2026-11-05",
+  "updated": "2026-11-09",
   "citations_by_year": [
     {
       "year": 2017,
@@ -14,7 +14,7 @@
     },
     {
       "year": 2018,
-      "citations": 80
+      "citations": 81
     },
     {
       "year": 2019,
@@ -46,12 +46,12 @@
     },
     {
       "year": 2026,
-      "citations": 210
+      "citations": 216
     }
   ],
   "metrics_since": {
     "year": 2021,
-    "citations": 1188,
+    "citations": 1194,
     "hindex": 19,
     "i10index": 22
   },
@@ -86,7 +86,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9130626029594451057",
         "cites_id": "9130626029594451057",
-        "value": 336
+        "value": 337
       }
     },
     {
@@ -190,7 +190,7 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=658686685389950885",
         "cites_id": "658686685389950885",
-        "value": 54
+        "value": 55
       }
     },
     {
@@ -272,6 +272,19 @@
       }
     },
     {
+      "title": "Observation of Kardar-Parisi-Zhang universal scaling in two dimensions",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:R3hNpaxXUhUC",
+      "citation_id": "YXmK2hcAAAAJ:R3hNpaxXUhUC",
+      "authors": "S Widmann, S Dam, J Düreth, CG Mayer, R Daviet, CP Zelle, D Laibacher, ...",
+      "publication": "Science 392 (6794), 221-224, 2026",
+      "year": 2026,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11788227964068867689",
+        "cites_id": "11788227964068867689",
+        "value": 26
+      }
+    },
+    {
       "title": "Polarization-dependent light-matter coupling and highly indistinguishable resonant fluorescence photons from quantum dot-micropillar cavities with elliptical cross section",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:_FxGoFyzp5QC",
       "citation_id": "YXmK2hcAAAAJ:_FxGoFyzp5QC",
@@ -282,19 +295,6 @@
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2582848162083519553",
         "cites_id": "2582848162083519553",
         "value": 26
-      }
-    },
-    {
-      "title": "Observation of Kardar-Parisi-Zhang universal scaling in two dimensions",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:R3hNpaxXUhUC",
-      "citation_id": "YXmK2hcAAAAJ:R3hNpaxXUhUC",
-      "authors": "S Widmann, S Dam, J Düreth, CG Mayer, R Daviet, CP Zelle, D Laibacher, ...",
-      "publication": "Science 392 (6794), 221-224, 2026",
-      "year": 2026,
-      "cited_by": {
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11788227964068867689",
-        "cites_id": "11788227964068867689",
-        "value": 24
       }
     },
     {
