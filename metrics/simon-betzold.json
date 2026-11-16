@@ -3,10 +3,10 @@
   "slug": "simon-betzold",
   "name": "Simon Betzold",
   "scholar_id": "YXmK2hcAAAAJ",
-  "citations": 1574,
+  "citations": 1576,
   "hindex": 20,
   "i10index": 24,
-  "updated": "2026-11-12",
+  "updated": "2026-11-16",
   "citations_by_year": [
     {
       "year": 2017,
@@ -38,20 +38,20 @@
     },
     {
       "year": 2024,
-      "citations": 205
+      "citations": 204
     },
     {
       "year": 2025,
-      "citations": 222
+      "citations": 220
     },
     {
       "year": 2026,
-      "citations": 217
+      "citations": 222
     }
   ],
   "metrics_since": {
     "year": 2021,
-    "citations": 1195,
+    "citations": 1197,
     "hindex": 19,
     "i10index": 22
   },
@@ -207,19 +207,6 @@
       }
     },
     {
-      "title": "Polarized and unpolarized emission from a single emitter in a bullseye resonator",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:qxL8FJ1GzNcC",
-      "citation_id": "YXmK2hcAAAAJ:qxL8FJ1GzNcC",
-      "authors": "G Peniakov, Q Buchinger, M Helal, S Betzold, Y Reum, MB Rota, G Ronco, ...",
-      "publication": "Laser & Photonics Reviews 18 (4), 2300835, 2024",
-      "year": 2024,
-      "cited_by": {
-        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15408972599324793259",
-        "cites_id": "15408972599324793259",
-        "value": 37
-      }
-    },
-    {
       "title": "Intrinsic and environmental effects on the interference properties of a high-performance quantum dot single-photon source",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:eQOLeE2rZwMC",
       "citation_id": "YXmK2hcAAAAJ:eQOLeE2rZwMC",
@@ -229,6 +216,19 @@
       "cited_by": {
         "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12939651973548140553",
         "cites_id": "12939651973548140553",
+        "value": 38
+      }
+    },
+    {
+      "title": "Polarized and unpolarized emission from a single emitter in a bullseye resonator",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YXmK2hcAAAAJ&citation_for_view=YXmK2hcAAAAJ:qxL8FJ1GzNcC",
+      "citation_id": "YXmK2hcAAAAJ:qxL8FJ1GzNcC",
+      "authors": "G Peniakov, Q Buchinger, M Helal, S Betzold, Y Reum, MB Rota, G Ronco, ...",
+      "publication": "Laser & Photonics Reviews 18 (4), 2300835, 2024",
+      "year": 2024,
+      "cited_by": {
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15408972599324793259",
+        "cites_id": "15408972599324793259",
         "value": 37
       }
     },
